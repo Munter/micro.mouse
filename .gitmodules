@@ -1,0 +1,3 @@
+[submodule "lib/offset"]
+	path = lib/offset
+	url = git@github.com:Munter/micro.offset.git

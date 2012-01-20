@@ -1,0 +1,20 @@
+{
+  "author": "Peter Müller <munter@fumle.dk> (http://fumle.dk)",
+  "name": "micro.offset",
+  "description": "A JS microlib to get the position of the mouse on a web page",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Munter/micro.mouse",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Munter/micro.mouse.git"
+  },
+  "engines": {
+    "node": ">=0.4"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "uglify-js": ">=1.2.0",
+    "micro.offset": ">=0.0.1"
+  }
+}
