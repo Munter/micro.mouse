@@ -3,7 +3,7 @@ default: micro.mouse-min.js
 PHONY: clean
 
 micro.mouse-debug.js: lib/offset/lib/ns.js lib/offset/lib/offset.js lib/mouse.js
-	echo "(function () {" >> $@
+	echo "(function () {" > $@
 	sed "s/^/\t/g" lib/offset/lib/ns.js >> $@
 	echo "" >> $@
 	sed "s/^/\t/g" lib/offset/lib/offset.js >> $@
