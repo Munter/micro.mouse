@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>mirco.mouse testing</title>
+        
+        <style type="text/css">
+            div {
+                margin: 100px;
+                width: 300px;
+                height: 200px;
+                background-color: #abcdef;
+                white-space: pre;
+            }
+        </style>
+        
+        <script type="text/javascript" src="../mirco.mouse-debug.js"></script>
+        <script>
+            window.onload = function () {
+                var div = document.getElementByTagName('div')[0];
+                document.body.onmousemove = function (e) {
+                    e = micro.mouse(e);
+                    
+                    div.innerHTML = JSON.stringify(e);
+                }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <div></div>
+    </body>
+</html>
