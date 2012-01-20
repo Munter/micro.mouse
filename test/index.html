@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>mirco.mouse testing</title>
+        <title>micro.mouse testing</title>
         
         <style type="text/css">
             div {
@@ -14,14 +14,18 @@
             }
         </style>
         
-        <script type="text/javascript" src="../mirco.mouse-debug.js"></script>
+        <script type="text/javascript" src="../micro.mouse-debug.js"></script>
         <script>
             window.onload = function () {
-                var div = document.getElementByTagName('div')[0];
-                document.body.onmousemove = function (e) {
+                var div = document.getElementsByTagName('div')[0];
+                document.documentElement.onmousemove = function (e) {
                     e = micro.mouse(e);
                     
-                    div.innerHTML = JSON.stringify(e);
+                    div.innerHTML = "" +
+                        "pageX: " + e.pageX + "<br>" +
+                        "pageY: " + e.pageY + "<br>" +
+                        "offsetX: " + e.offsetX + "<br>" +
+                        "offsetY: " + e.offsetY;
                 }
             }
         </script>
